@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+} */
+
+:root {
+  --blueberry: #3b82f6;
+  --brown: #b28b84;
+  --ivory: #ffffea;
+  --black: #242424;
+
+  @apply scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-400;
+}
+
+div {
+  @apply scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-gray-400;
+}
+
+/* ------- Navigation ------- */
+
+.nav-links a {
+  @apply px-4 py-1 uppercase tracking-widest cursor-pointer hover:underline underline-offset-4;
+}
+
+.active {
+  @apply bg-slate-500 rounded-sm text-slate-50 no-underline transition-all duration-[0.4s] ease-linear !important;
+}
+
+/* ------- Sections ------- */
+
+#home,
+#about,
+#featured,
+#latest,
+#subscribe {
+  @apply lg:bg-gradient-to-b from-[#dfecff] via-[#f3f3f3] to-neutral-50;
+}
+
+#latest,
+#featured {
+  @apply px-6 pt-32 md:pt-28 lg:pt-24 !important;
+}
+
+#latest {
+  @apply h-full !important;
+}
+
+#featured {
+  @apply flex flex-col justify-evenly;
+}
+
+#subscribe {
+  @apply pt-10 md:pt-28 lg:pt-24 !important;
+}
+
+#featured-preview,
+#latest-preview {
+  @apply px-2 py-2 mb-6 space-y-6 text-left md:text-center z-10;
+}
+
+#about h2,
+#latest-preview h2,
+#featured-preview h2 {
+  @apply text-2xl text-gray-600 font-mono font-bold tracking-widest uppercase underline underline-offset-8;
+}
+
+#latest-preview h4,
+#featured-preview h4 {
+  @apply text-gray-600 font-semibold tracking-wider leading-loose;
+}
+
+.footer-link {
+  @apply hover:scale-105 hover:text-white transition-all duration-75 ease-in;
+}

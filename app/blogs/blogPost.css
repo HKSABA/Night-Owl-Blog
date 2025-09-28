@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply scrollbar-thin scrollbar-track-gray-300 scrollbar-thumb-blue-400 scroll-smooth !important;
+}
+
+article {
+  font-family: "Roboto", sans-serif;
+}
+
+.blog-nav-link {
+  @apply p-2 md:px-5 md:py-[0.6rem] text-xs md:text-[0.8rem] text-white tracking-wider bg-gradient-to-r from-indigo-400 to-blue-400 shadow-md border border-transparent hover:border-slate-600 hover:text-black transition-all duration-75 ease-in;
+}
+
+.reading {
+  @apply text-blue-500;
+}

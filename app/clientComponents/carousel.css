@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.swiper {
+  @apply relative h-96 w-full pt-2 pb-20 !important;
+}
+
+.swiper-slide {
+  @apply relative shadow-lg !important;
+}
+
+.swiper-slide-active {
+  @apply drop-shadow-xl !important;
+}
+
+.swiper-slide-active:hover #featured-image {
+  @apply scale-125;
+}
+
+.swiper-slide-active:hover #featured-content {
+  @apply bottom-0;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  @apply w-8 h-8 sm:w-9 sm:h-9 drop-shadow-lg rounded-full !important;
+}
+
+.swiper-button-prev {
+  @apply left-[24%] sm:left-[34%] !important;
+}
+.swiper-button-next {
+  @apply left-[64%] sm:left-[58%] !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply content-none !important;
+}
+
+.swiper-pagination {
+  @apply relative w-28 sm:w-40 -bottom-11 sm:-bottom-12 !important;
+}
+
+.swiper-pagination-bullets {
+  @apply drop-shadow-lg;
+}
